@@ -1,0 +1,261 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Off-white for the background */
+    color: #333; /* Default text color */
+}
+
+.header {
+    background-color: #CAD2C5; /* Green for header */
+    padding: 30px 0; /* Space for the header background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    text-align: left;
+    padding: 0 30px; /* Add padding for header text */
+    color: #354A21; /* Darker green for text */
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-content p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.top-icons {
+    margin-top: 10px;
+}
+
+/* White bar styling */
+.white-bar {
+    background-color: #f5f5f5; /* White background */
+    padding: 15px 0; /* Padding only for the white bar */
+    width: 100vw; /* Full width of the viewport */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    justify-content: left; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    gap: 20px; /* Space between icons */
+    margin: 0; /* Remove default margins */
+    position: relative; /* Ensure proper positioning */
+    left: 0; /* Align the white bar to the left edge */
+}
+
+.header-icons {
+    background-color: #f5f5f5; /* White for the box */
+    padding: 15px 30px; /* Same left-right padding as header content */
+    margin: 20px 0; /* Space above and below the box */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: left; /* Center align icons horizontally */
+    gap: 20px; /* Add spacing between icons */
+    border-radius: 0px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.icon-link {
+    color: #354A21; /* Dark green for icons */
+    font-size: 1.5rem; /* Icon size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.icon-link:hover {
+    color: #4F7942; /* Lighter green on hover */
+}
+
+/* Layout Styling */
+.main-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+    margin: 20px;
+    gap: 20px; /* Space between left and right columns */
+}
+
+/* Left Column */
+.left-column {
+    flex: 0.3;
+    background-color: #EEECE8; /* Beige for cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo img {
+    width: 100%; /* Use the full width of the parent container */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    max-width: 400px; /* Set the square size (e.g., 200px by 200px) */
+    max-height: 400px;
+    border-radius: 5px; /* Optional: Slightly rounded corners */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    object-fit: cover; /* Ensures the image fills the square area */
+}
+
+/* About Section */
+.about-section {
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #354A21; /* Darker green for section titles */
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333; /* Standard text color */
+}
+
+.phone-number {
+    color: #354A21; /* Darker green for the phone number */
+    font-weight: bold; /* Bold font */
+    text-decoration: none; /* Remove underline */
+    font-size: 0.9rem; /* Slightly larger font */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.phone-number:hover {
+    color: #4F7942; /* Lighter green on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.resume-btn {
+    display: inline-block;
+    background-color: #354A21; /* Dark green background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size */
+    font-weight: 500; /* Slightly bold font */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    margin-top: 10px; /* Space above the button */
+}
+
+.resume-btn:hover {
+    background-color: #4F7942; /* Lighter green on hover */
+    color: #ffffff; /* Ensure text stays white */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Elevated shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.copyright-text {
+    margin-top: 30px; /* Space above the text */
+    font-size: 0.35rem;
+    color: #666666; /* Subtle gray color */
+    text-align: left; /* Center align the text */
+    font-style: italic; 
+    font-weight: 200; /* Normal font weight */
+}
+
+/* Right Column */
+.right-column {
+    flex: 0.7;
+    background-color: #EEECE8; /* Beige for cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+    gap: 20px; /* Space between the cards */
+    width: 100%;
+    max-width: 1200px; /* Restrict max width */
+    margin: 0 auto; /* Center align the grid */
+}
+
+.work-item {
+    background-color: #f5f5f5; /* Off-white for work items */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+}
+
+.work-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.work-item img {
+    width: 100%;
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images fit nicely */
+    border-radius: 8px;
+    margin-bottom: 10px; /* Adds space between image and text */
+}
+
+.work-item p {
+    font-size: 1rem;
+    color: #354A21; /* Darker green for text */
+    margin-top: 10px;
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.experience-item {
+    margin-bottom: 20px; /* Adds space between experience cards */
+}
+
+.work-item, .skill-card, .experience-item {
+    background-color: #f5f5f5; /* Off-white for items inside the cards */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-item:hover, .skill-card:hover, .experience-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #354A21; /* Darker green for section titles */
+}
+
+/* Skill Card and Experience List Styling */
+.skill-card ul, .experience-item ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #333; /* Standard text color */
+}
+
+.skill-card ul ul, .experience-item ul ul {
+    list-style-type: circle; /* Nested list styling */
+    margin-left: 20px;
+}
+
+.skill-card h3, .experience-item h3 {
+    color: #354A21; /* Darker green for titles */
+    margin-bottom: 10px;
+}
